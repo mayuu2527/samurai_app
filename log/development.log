@@ -767,3 +767,190 @@ Started GET "/assets/users.js?body=1" for 61.26.127.48 at 2015-03-21 13:38:33 +0
 
 Started GET "/assets/application.js?body=1" for 61.26.127.48 at 2015-03-21 13:38:33 +0000
   [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'example@railstutorial.jp' LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 61.26.127.48 at 2015-03-21 13:55:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shiv.html.erb (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ee7513d5dca42adccd8d7e810f3598b07560371c' LIMIT 1
+  Rendered layouts/_header.html.erb (31.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 456ms (Views: 444.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/users.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:29 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:30 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:30 +0000
+
+
+Started GET "/assets/users.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:30 +0000
+
+
+Started GET "/assets/rails.png" for 61.26.127.48 at 2015-03-21 13:55:30 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:34 +0000
+
+
+Started GET "/signin" for 61.26.127.48 at 2015-03-21 13:55:37 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (87.8ms)
+  Rendered layouts/_shiv.html.erb (0.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'ee7513d5dca42adccd8d7e810f3598b07560371c' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 131ms (Views: 126.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/sessions" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eASHO58Qu1UiSLLpyAAGyEzWYBX7C/W3lMmXbNvc/0Q=", "session"=>{"email"=>"example@railstutorial.jp", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'example@railstutorial.jp' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  UPDATE "users" SET "remember_token" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["remember_token", "c9769b15f9b01e6078c7e5cc7557f307ef98faf7"], ["updated_at", Sat, 21 Mar 2015 13:55:44 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://study-rails-mayuu2527.c9.io/users/1
+Completed 302 Found in 111ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/users/1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shiv.html.erb (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'c9769b15f9b01e6078c7e5cc7557f307ef98faf7' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/users.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/custom.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/static_pages.css?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/bootstrap.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/static_pages.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/users.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:45 +0000
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 61.26.127.48 at 2015-03-21 13:55:49 +0000
